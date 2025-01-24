@@ -106,3 +106,17 @@
   margin-bottom: 24px;
 
 }
+
+.shadow{
+width: 24px;
+height: 40px;
+border: 0px solid #979797;
+background: linear-gradient(270deg, #f8f8f8 0.04%, rgba(248, 248, 248, 0) 100%);
+position: absolute;
+right: 0;
+bottom: 0;
+}
+.swiper{
+  position: relative;
+ 
+}
