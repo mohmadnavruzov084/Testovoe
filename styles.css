@@ -83,12 +83,15 @@
 }
 
 .services__read-more {
-  display: flex;
-  margin: 16px 156px 54px 16px;
+  margin: 16px;
+ position: relative;
 }
 .services__read-more_img {
-  margin-right: 8px;
+  position: absolute;
+  left: 0px;
+
 }
+
 .services__read-more_title {
   font-weight: 500;
   font-size: 16px;
@@ -96,6 +99,7 @@
   letter-spacing: -0.01em;
   color: #1b1c21;
   font-family: 'TT Lakes', sans-serif;
+  margin-left: 16px;
 }
 .services__Big-logo_img  img{
   display: block;
@@ -119,4 +123,23 @@ bottom: 0;
 .swiper{
   position: relative;
  
+}
+
+.accordion{
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.panel {
+  display: none;
+  overflow: hidden;
+  font-family: 'TT Lakes', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: 0.01em;
+  color: #1b1c21;
+  font-family: 'TT Lakes', sans-serif;
+  margin-top: 15px;
 }
