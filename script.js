@@ -17,26 +17,26 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 
-var swiper = new Swiper('.swiper', {
-  slidesPerView: 1.27,
-  direction: getDirection(),
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  on: {
-    resize: function () {
-      swiper.changeDirection(getDirection());
-    },
-  },
-});
+// var swiper = new Swiper('.swiper', {
+//   slidesPerView: 1,
+//   direction: getDirection(),
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//   on: {
+//     resize: function () {
+//       swiper.changeDirection(getDirection());
+//     },
+//   },
+// });
 
-function getDirection() {
-  var windowWidth = window.innerWidth;
-  var direction = window.innerWidth >= 1440 ? 'vertical' : 'horizontal';
+// function getDirection() {
+//   var windowWidth = window.innerWidth;
+//   var direction = window.innerWidth >= 1450 ? 'vertical' : 'horizontal';
 
-  return direction;
-}
+//   return direction;
+// }
 
 
 
@@ -59,3 +59,11 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1.27,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});

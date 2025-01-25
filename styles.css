@@ -55,6 +55,7 @@
   letter-spacing: -0.01em;
   color: #7e7e82;
 }
+
 .swiper-slide:hover {
   border: 2px solid #b8ffec;
   border-radius: 6px;
@@ -128,7 +129,7 @@ bottom: 0;
 .accordion{
   border: none;
   outline: none;
-  transition: 0.4s;
+  transition: 0.8s;
 }
 
 .panel {
@@ -142,4 +143,40 @@ bottom: 0;
   color: #1b1c21;
   font-family: 'TT Lakes', sans-serif;
   margin-top: 15px;
+}
+
+
+
+
+.repair__brands-title{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: #7e7e82;
+margin: 40px 16px 0px ;
+}
+
+
+
+
+.repair__brands{
+  margin:24px 0 24px 0;
+  
+}
+.repair__brands-card_brands{
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  width: 240px;
+  height: 72px;
+  margin:32px 23px 36px 16px;
+}
+.card_brands_item{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 9px 16px 23px;
+
 }
