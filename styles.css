@@ -15,27 +15,33 @@
     padding: 20px 15px;
     background: #fff;;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     z-index: 2;
+   
+  
+  }
+  .menu ul li{
+    margin-top: 30px;
   }
   .menu_active {
     left: 0;
+    
   }
-  .menu__item {
-    padding-right: 0;
-    margin-bottom: 50px;
-    border: 0;
-    font-size: 20px;
-    margin: 10px 0;
-  }
-  .menu__item a {
+ 
+  .menu__item  a{
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: -0.01em;
     color: #1b1c21;
+    font-family: 'TT Lakes', sans-serif;
   }
+  .menu__item  a:hover::before{
+    color: #7e7e82;
+    svg width="4" height="32" viewBox="0 0 4 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+  path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C4 1.79086 2.20914 0 0 0V32C2.20914 32 4 30.2091 4 28V4Z" fill="#41F6D7" 
 
+  }
   .hamburger {
     display: flex;
     position: absolute;
@@ -61,17 +67,6 @@
    
   }
   .hamburger span {
-    /* display: block;
-    border-radius: 1px;
-    width: 18px;
-    height: 2px;
-    background-color: #fff;
-    margin-bottom: 4px;
-    transition: 0.6s all;
-    position: relative; 
-    top: unset;  
-    left: unset; 
-    transform-origin: 0 0; */
     display: block;
     height: 2px;
     width: 100%;
@@ -128,25 +123,7 @@
   .menu__item a {
     font-size: 15px;
   }
-  .title {
-    font-size: 24px;
-  }
-  .title_left {
-    text-align: center;
-  }
-  .footer__info {
-    width: 100%;
-  }
-  .modal {
-    width: 260px;
-    padding: 34px 40px 40px 24px;
-  }
-  .modal__close {
-    right: -27px;
-  }
-  .inp-modal {
-    width: 220px;
-  }
+ 
 }
 .pageup {
   display: none;
