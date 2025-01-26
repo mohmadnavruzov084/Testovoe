@@ -22,14 +22,14 @@
     justify-content: center;
     align-items: left;
     z-index: 2;
-   
+    padding: 0;
   
   }
 
 
   .menu_active {
     left: 0;
-    
+   display: flex;
   }
  
   .menu__item  a{
@@ -39,10 +39,23 @@
     letter-spacing: -0.01em;
     color: #1b1c21;
     font-family: 'TT Lakes', sans-serif;
+    padding-left: 0; 
+    display: block;
+    position: relative;
+    padding-left: 20px;
   }
-  .menu__item  a:hover::before{
-    color: #7e7e82;
-  }
+
+.menu__item:hover::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  border-radius: 50px;
+  width: 4px;
+   height: 40px;
+  background-color: #41f6d7;
+  margin-bottom: 150px;
+  color: #7e7e82;
+}
   .hamburger {
     display: flex;
     position: absolute;
@@ -68,13 +81,13 @@
    
   }
   .hamburger span {
-    display: block;
+    
     height: 2px;
     width: 100%;
     background-color: #fff;
     margin-bottom: 3px;
     transition: 0.5s all;
-    display: flex;
+   display: flex;
     left: 11px;
     position: relative; 
     bottom: 2px;
@@ -111,8 +124,50 @@
     height: 2px;
     transform: translateY(3px) rotate(45deg);
   }
-  
+  .contacts{
+    display: flex;
+    align-items: flex-start;
+  }
+  .contacts__item{
+    margin-right: 16px;
+    
+  }
+  .contacts .contacts__item:nth-child(1){
+    padding-left: 24px;
+  }
+  .conanact_num{
+    padding: 16px 0 0 24px;
+  }
+  .mail{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #1b1c21;
+    font-family: "TT Lakes", sans-serif;
+  }
+  .number{
+    font-weight: 700;
+font-size: 24px;
+line-height: 133%;
+letter-spacing: -0.03em;
+color: #1b1c21;
+font-family: "TT Lakes", sans-serif;
+padding-top: 12px;
+  }
+  .lang ul li{
+    display: inline;
+    padding-top:14px;
+    font-family: "TT Lakes", sans-serif;
+  }
+  .lang ul li:hover{
+    display: inline;
+    padding-top:10px;
+    color: #7e7e82;
+  }
 }
+
+
 @media (max-width: 575px) {
   li.menu__item{
     margin-top: 10px;
@@ -132,112 +187,7 @@
   }
  
 }
-.pageup {
-  display: none;
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  width: 40px;
-  height: 40px;
-}
-.pageup img {
-  width: 100%;
-}
-.carousel {
-  padding: 81px 0;
-}
-.carousel__inner {
-  position: relative;
-  width: 750px;
-  margin: 0 auto;
-}
-.carousel .prev {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  left: -66px;
-}
-.carousel .prev img {
-  width: 31px;
-  height: 50px;
-}
-.carousel .next {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: -66px;
-}
-.carousel .next img {
-  width: 31px;
-  height: 50px;
-}
-.carousel .tns-item img {
-  display: block;
-  margin: 0 auto;
-}
-[data-action='stop'] {
-  display: none;
-}
-.feed-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 303px;
-}
-input {
-  background: #fff;
-  width: 303px;
-  height: 54px;
-  border-radius: 5px;
-  margin-bottom: 15px;
-  padding-left: 31px;
-}
-input:nth-child(3) {
-  margin-bottom: 20px;
-}
-input::-webkit-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 471%;
-  color: #4b4b4b;
-  padding-left: 21px;
-}
-input::-moz-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 471%;
-  color: #4b4b4b;
-  padding-left: 21px;
-}
-input:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 471%;
-  color: #4b4b4b;
-  padding-left: 21px;
-}
-input::-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 471%;
-  color: #4b4b4b;
-  padding-left: 21px;
-}
-input::placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 471%;
-  color: #4b4b4b;
-  padding-left: 21px;
-}
+
 
 
 .stick {
@@ -292,10 +242,13 @@ input::placeholder {
   letter-spacing: -0.01em;
   color: #7e7e82;
 }
-
+.text{
+  padding: 8px 9px 8px 16px;
+}
 .text:hover {
   border: 2px solid #b8ffec;
   border-radius: 6px;
+
 }
 
 @media (max-width: 320px) {
