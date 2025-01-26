@@ -38,9 +38,6 @@
   }
   .menu__item  a:hover::before{
     color: #7e7e82;
-    svg width="4" height="32" viewBox="0 0 4 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-  path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C4 1.79086 2.20914 0 0 0V32C2.20914 32 4 30.2091 4 28V4Z" fill="#41F6D7" 
-
   }
   .hamburger {
     display: flex;
@@ -116,7 +113,10 @@
   
 }
 @media (max-width: 320px), (max-width: 375px), (max-width: 414px) {
-  
+  li.menu__item{
+    margin-top: 10px;
+    padding-bottom: 24px;
+  }
   .menu {
     width: 100%;
   }
