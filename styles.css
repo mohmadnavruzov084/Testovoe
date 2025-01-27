@@ -4,6 +4,8 @@
   padding: 0;
 }
 @media (max-width: 768px) {
+
+
   .header__menu{
     display: block;
     
@@ -11,7 +13,7 @@
   .feedback{
     display: flex;
     justify-content: flex-end;
-    margin-left: 280px;
+    
    
   }
   .d-none{
@@ -29,13 +31,21 @@
 
 
 @media (max-width: 768px) {
-
-  
-  .logo,.stick{
+  .overlay {
     display: none;
-  }
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.97);
+    z-index: 3;
+}
+.overlay_active{
+  display: flex;
+}
+ 
   .d-block{
-    display: flex;
+    display: inline;
   }
   .dop-menu{
     margin-top:19px;
@@ -96,8 +106,14 @@
   .menu_active {
     left: 0;
    display: flex;
-   opacity: 0.97;
+   /* opacity: 1; */
   }
+  .search-2{
+      position: absolute;
+  top: 16px;
+  right: 116px;
+  }
+
  
   .menu__item  a{
     font-weight: 500;
@@ -233,6 +249,9 @@ padding-top: 12px;
     padding-top:10px;
     color: #7e7e82;
   }
+  .menu-320{
+    display: none;
+  }
 }
 
 
@@ -241,10 +260,36 @@ padding-top: 12px;
     margin-top: 10px;
     padding-bottom: 24px;
   }
+  .feedback{
+    display: none;
+  }
+  .menu-320{
+    display: flex;
+  }
 }
 @media (max-width: 320px), (max-width: 375px), (max-width: 414px),(max-width: 450px) {
+  .menu-320{
+    display: flex;
+    margin-right: 20px;
+   
+  }
+.icon-1{
+  margin: 0 8px 0 90px;
+}
+ .stick-3{
+  margin: 8px 118px;
+ }
+  .feedback{
+    display: none;
+  }
+  .search-2{
+    right: 20px;
+  }
   .logo,.stick{
-    display: block;
+    display: inline;
+    position: absolute;
+    left: 70px;
+    top: 13px;
   }
   .d-block{
     display: none;
@@ -450,4 +495,3 @@ margin: 40px 16px 0px ;
   background: #ddd;
 
 }
-
