@@ -252,6 +252,17 @@ padding-top: 12px;
   .menu-320{
     display: none;
   }
+  .logo-768{
+    left: 104px;
+    top: 14px;
+    /* margin-right: 69px; */
+    position: absolute;
+  }
+  .stick-4{
+    position: absolute;
+    left: 80px;
+    top: 21px;
+  }
 }
 
 
@@ -357,11 +368,12 @@ padding-top: 12px;
   color: #7e7e82;
 }
 .text{
-  padding: 8px 26px 8px 26px;
+  padding: 8px 9px 8px 16px;
 }
 .text:hover {
   border: 2px solid #b8ffec;
   border-radius: 6px;
+  padding: 8px 20px 8px 20px;
 
 }
 
