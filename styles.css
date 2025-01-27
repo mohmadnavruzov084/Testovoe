@@ -3,7 +3,58 @@
   margin: 0;
   padding: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .header__menu{
+    display: block;
+    
+  }
+  .feedback{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 280px;
+   
+  }
+  .d-none{
+    display: none;
+  }
+  .d-block{
+    display: block;
+  }
+  
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+  
+  .logo,.stick{
+    display: none;
+  }
+  .d-block{
+    display: flex;
+  }
+  .dop-menu{
+    margin-top:19px;
+  }
+  .dop-menu .stick{
+    margin: 10px;
+  }
+  .stick-2{
+    margin: 5px 20px 28px 20px;
+  }
+  
+  .header__menu {
+    /* max-width: 320px; */
+    height: 88px;
+    display: flex;
+    justify-content: space-around;
+    margin: 18px -16px 18px 56px;
+  }
+ 
   li.menu__item{
     margin-top: 10px;
     padding-bottom: 24px;
@@ -15,7 +66,7 @@
     flex-direction: column;
     top: 0;
     left: -100%;
-    width: 100%;
+    width: 50%;
     height: 100%;
     padding: 20px 15px;
     background: #fff;;
@@ -25,11 +76,27 @@
     padding: 0;
   
   }
+ /* .image1{
+  position: relative;
+  right: 450px;
+ } */
+  /* .menu_active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%; 
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); 
+
+  
+  } */
 
 
   .menu_active {
     left: 0;
    display: flex;
+   opacity: 0.97;
   }
  
   .menu__item  a{
@@ -78,6 +145,7 @@
     align-items: flex-start;
     justify-content: center;
     margin-top: 24px;
+    margin-left: 12px;
    
   }
   .hamburger span {
@@ -108,7 +176,7 @@
   .hamburger_active span {
     margin-bottom: -2px;
     position: absolute;
-    left: 9px;
+    left: 20px;
     top: 13px;
   }
   .hamburger_active span:nth-child(1) {
@@ -175,6 +243,13 @@ padding-top: 12px;
   }
 }
 @media (max-width: 320px), (max-width: 375px), (max-width: 414px),(max-width: 450px) {
+  .logo,.stick{
+    display: block;
+  }
+  .d-block{
+    display: none;
+  }
+ 
   li.menu__item{
     margin-top: 10px;
     padding-bottom: 24px;
@@ -196,13 +271,7 @@ padding-top: 12px;
   height: 32px;
   background: #eaeaea;
 }
-.header__menu {
-  max-width: 320px;
-  height: 88px;
-  display: flex;
-  justify-content: space-around;
-  margin: 18px -16px 18px 56px;
-}
+
 
 .services__title {
   width: 304px;

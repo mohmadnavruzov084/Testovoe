@@ -31,12 +31,12 @@ window.addEventListener('DOMContentLoaded', () => {
 //   },
 // });
 
-// function getDirection() {
-//   var windowWidth = window.innerWidth;
-//   var direction = window.innerWidth >= 1450 ? 'vertical' : 'horizontal';
+function getDirection() {
+  var windowWidth = window.innerWidth;
+  var direction = window.innerWidth >= 1450 ? 'vertical' : 'horizontal';
 
-//   return direction;
-// }
+  return direction;
+}
 
 
 
@@ -65,5 +65,19 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1.27,
   pagination: {
     el: ".swiper-pagination",
-  },
+  },  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+     768: {
+      slidesPerView: 3.4,
+      
+    },
+   1024: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+}
 });
+
