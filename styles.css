@@ -124,7 +124,7 @@ margin: 40px 16px 0px ;
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px),(max-width: 900px){
 
 
   .header__menu{
@@ -151,7 +151,7 @@ margin: 40px 16px 0px ;
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px),(max-width: 900px) {
   .services{
     margin-bottom: -60px;
   }
